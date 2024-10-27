@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Data Mahasiswa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Profile Card -->
+  <ion-card class="ion-text-center">
+    <ion-card-header>
+      <ion-avatar style="width: 120px; height: 120px; margin: 0 auto;">
+        <ion-icon name="person-circle-sharp" style="font-size: 120px; color: var(--ion-color-tertiary);"></ion-icon>
+      </ion-avatar>
+      <ion-card-title class="ion-padding-top">Arya Galuh Saputra</ion-card-title>
+      <ion-card-subtitle>H1D022022</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-chip color="tertiary">
+        <ion-icon name="school-outline"></ion-icon>
+        <ion-label>Informatika 2022</ion-label>
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Stats Section -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="ion-text-center">
+            <ion-icon name="newspaper" color="danger" style="font-size: 24px;"></ion-icon>
+            <h2>10</h2>
+            <p>Task</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="ion-text-center">
+            <ion-icon name="checkmark-done" color="success" style="font-size: 24px;"></ion-icon>
+            <h2>7</h2>
+            <p>Done</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Progress Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Task Progress</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-progress-bar value="0.7" color="tertiary"></ion-progress-bar>
+      <ion-text class="ion-text-center ion-padding-top">
+        <p>70% Completed</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
